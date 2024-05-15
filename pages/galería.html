@@ -20,26 +20,58 @@
         <div class="h2">
             <h2>Galería📷</h2>
         </div>
-        <nav class="menu">
-            <ul>
-                <!--link interno-->
-                <li><a href="../index.html">Inicio</a></li>
-                <!--link relativo-->
-                <li><a href="../pages/discografía.html">Discografía</a></li>
-                <!--link relativo-->
-                <li><a href="../pages/shows.html">shows</a></li>
-                <!--link relativo-->
-                <li><a href="../pages/contactanos.html">contactanos</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/discografía.html">discografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/shows.html">show</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../pages/contactanos.html">contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main>
         <h2>Imagenes</h2>
-        <div class="img">
-            <img src="../multimedia/fotos/Captura de pantalla 2024-04-22 095532.png" width="400px" height="400px" alt="">
-            <img src="../multimedia/fotos/Captura de pantalla 2024-04-22 095644.png" width="400px" height="400px" alt="">
-            <img src="../multimedia/fotos/355438137_938235144099973_4713712457096778975_n.jpg" width="400px" height="400px" alt="">
-        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="../multimedia/fotos/Captura de pantalla 2024-04-22 095532.png" class="d-block mx-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="../multimedia/fotos/Captura de pantalla 2024-04-22 095644.png" class="d-block mx-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="../multimedia/fotos/355438137_938235144099973_4713712457096778975_n.jpg" class=" d-block mx-auto" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

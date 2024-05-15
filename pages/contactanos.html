@@ -21,39 +21,51 @@
     <header class="h2">
         <h2>Contactanos📨</h2>
     </header>
-    <nav class="menu">
-        <ul>
-            <!--link relativo-->
-            <li><a href="../index.html">Inicio</a></a></li>
-            <!--link relativo-->
-            <li><a href="../pages/galería.html">Galería</a></li>
-            <!--link relativo-->
-            <li><a href="../pages/discografía.html">Discografía</a></li>
-            <!--link relativo-->
-            <li><a href="../pages/shows.html">shows</a></li>
-            <!--link relativo-->
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/galería.html">galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/discografía.html">discografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../pages/shows.html">shows</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <form class="formulario" >
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputname1" class="form-label">nombre y apellido</label>
-            <input type="name" class="form-control" id="exampleInputname1">
-        </div>
-        <div>
-            <label for="exampleinputcoment1" class="form-label">comentarios</label>
-            <input type="coment" class="form-control" id="exampleinputcoment1">
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check</label>
-        </div>
-    <button type="submit" class="btn btn-primary">enviar</button>
-    </form>
+    <div class="container mx-auto">
+        <form class="formulario">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputname1" class="form-label">nombre y apellido</label>
+                <input type="name" class="form-control" id="exampleInputname1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleinputcoment1" class="form-label">comentarios</label>
+                <input type="coment" class="form-control" id="exampleinputcoment1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check</label>
+            </div>
+        <button type="submit" class="btn btn-primary">enviar</button>
+        </form>
+    </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
