@@ -98,11 +98,11 @@ height: 800px;
 }
 @media (max-width: 768px) {
     .info{
-        width: fit-content;
+        width: auto;
         max-height: none;
     }
     .discografia{
-        width: fit-content;
+        width:auto;
         max-height: none;
     }
 }
