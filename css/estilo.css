@@ -2,20 +2,13 @@ body{
 background-image: url(../multimedia/fotos/p.jpg);
 background-size: cover;
 }
-.contenedor1{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr;
-    gap: 100px 100px;
-    grid-template-areas:
-    "foto h1 h1"
-    "foto h1 h1"
-}
-.h1{
-    grid-area: h1;
-}
-.foto{
-    grid-area: foto;
+h1{
+    font-family: Rock salt;
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(10, 172, 10);
+    background-color: black;
+    margin: 0px;
 }
 .contenedor2{
     background-color: rgba(240, 255, 255, 0.627);
@@ -43,12 +36,6 @@ background-size: cover;
 .leyenda{
     grid-area: leyenda;
 }
-.h1 h1{
-    font-family: "Rock Salt";
-    font-size: 100px;
-    font-style: normal;
-    color: black;
-}
 .info{
     text-align: center;
     font-size: 25px;
@@ -71,9 +58,13 @@ background-size: cover;
     background-color: rgba(240, 255, 255, 0.627);
     border: solid;
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
+    display: inline-block;
+    align-items: center;
+    margin: 5px;
+}
+.shows img{
+    width: 500px;
+    height: auto;
 }
 .temas{
     text-align: left;
@@ -106,16 +97,6 @@ width: 900px;
 height: 800px;
 }
 @media (max-width: 768px) {
-    .contenedor{
-        display: grid; 
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.2fr 0.2fr;
-        gap: 0px 0px;
-        grid-template-areas:
-        "foto"
-        "h1"
-        "h2"
-    }
     .info{
         width: fit-content;
         max-height: none;
