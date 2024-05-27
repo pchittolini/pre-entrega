@@ -1,108 +1,112 @@
-body{
-background-image: url(../multimedia/fotos/p.jpg);
-background-size: cover;
+body {
+  background-image: url(../multimedia/fotos/p.jpg);
+  background-size: cover;
 }
-h1{
-    font-family: Rock salt;
-    font-size: 4rem;
-    text-align: center;
-    color: rgb(10, 172, 10);
-    background-color: black;
-    margin: 0px;
+body header h1 {
+  font-family: Rock salt;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(10, 172, 10);
+  background-color: black;
+  margin: 0px;
 }
-.contenedor2{
-    background-color: rgba(240, 255, 255, 0.627);
-    text-align: center;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.6fr 1.6fr 1.2fr 1.2fr 0.4fr; 
-    gap: 0px 0px; 
-    grid-template-areas:
-    ". titulo titulo ."
-    ". imgdisco imgdisco ."
-    ". temas temas ."
-    ". temas temas ."
-    ". leyenda leyenda ."
+
+h2, h3, h4, h5, h6, li, a {
+  font-family: "Rock Salt";
+  font-size: 30px;
+  font-style: normal;
+  color: black;
+  text-align: center;
 }
-.titulo{
-    grid-area: titulo;
+
+p {
+  font-family: "indie flower";
+  font-weight: 400;
+  font-style: normal;
+  color: black;
 }
-.imgdisco{
-    grid-area: imgdisco;
+
+.info {
+  text-align: center;
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(240, 255, 255, 0.627);
+  border: solid;
 }
-.temas{
-    grid-area: temas;
+.info section p a {
+  text-decoration: none;
+  color: black;
 }
-.leyenda{
-    grid-area: leyenda;
+
+.redes {
+  background-color: rgba(240, 255, 255, 0.627);
+  margin: 10px;
+  border: solid;
+  text-align: center;
 }
-.info{
-    text-align: center;
-    font-size: 25px;
-    margin: 10px;
-    padding: 10px;
-    background-color:rgba(240, 255, 255, 0.627);
-    border: solid;
+
+.shows {
+  background-color: rgba(240, 255, 255, 0.627);
+  border: solid;
+  padding: 1rem;
+  display: inline-block;
+  align-items: center;
+  margin: 5px;
 }
-.info section p a{
-    text-decoration: none;
-    color: black;
+.shows .img {
+  width: 500px;
+  height: auto;
 }
-.redes{
-    background-color:rgba(240, 255, 255, 0.627);
-    margin: 10px;
-    border: solid;
-    text-align: center;
+
+.carousel-inner div img {
+  width: 900px;
+  height: 800px;
 }
-.shows{
-    background-color: rgba(240, 255, 255, 0.627);
-    border: solid;
-    padding: 1rem;
-    display: inline-block;
-    align-items: center;
-    margin: 5px;
+
+.contenedor2 {
+  background-color: rgba(240, 255, 255, 0.627);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1.6fr 1.2fr 1.2fr 0.4fr;
+  gap: 0px 0px;
+  grid-template-areas: ". titulo titulo ." ". imgdisco imgdisco ." ". temas temas ." ". temas temas ." ". leyenda leyenda .";
 }
-.shows img{
-    width: 500px;
-    height: auto;
+
+.titulo {
+  grid-area: titulo;
 }
-.temas{
-    text-align: left;
-    font-size: 2rem;
-    margin: 3.5rem;
-    text-align: center;
+
+.imgdisco {
+  grid-area: imgdisco;
 }
-.formulario{
-    background-color: rgba(240, 255, 255, 0.903);
-    border: solid;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px auto;
+
+.temas {
+  grid-area: temas;
 }
-h2, h3, h4, h5, h6, li, a{
-    font-family: "Rock Salt";
-    font-size: 30px;
-    font-style: normal;
-    color: black;
-    text-align: center;
+
+.leyenda {
+  grid-area: leyenda;
 }
-p{
-    font-family: "indie flower";
-    font-weight: 400;
-    font-style: normal;
-    color: black;
+
+.formulario {
+  background-color: rgba(240, 255, 255, 0.627);
+  border: solid;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
 }
-.carousel-inner img{
-width: 900px;
-height: 800px;
-}
+
 @media (max-width: 768px) {
-    .info{
-        width: auto;
-        max-height: none;
-    }
-    .discografia{
-        width:auto;
-        max-height: none;
-    }
+  .info {
+    width: auto;
+    max-height: none;
+  }
+  .discografia {
+    width: auto;
+    max-height: none;
+  }
 }
+
+/*# sourceMappingURL=estilo.css.map */

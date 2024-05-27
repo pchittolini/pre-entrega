@@ -1,0 +1,113 @@
+@import "var";
+body{
+    background-image: url(../multimedia/fotos/p.jpg);
+    background-size: cover;
+    header{
+        h1{
+            font-family: Rock salt;
+            font-size: 4rem;
+            text-align: center;
+            color: $bglogo;
+            background-color: $bgfont;
+            margin: 0px;
+        }
+    }
+}
+h2, h3, h4, h5, h6, li, a{
+    font-family: "Rock Salt";
+    font-size: 30px;
+    font-style: normal;
+    color: $bgfont;
+    text-align: center;
+}
+p{
+    font-family: "indie flower";
+    font-weight: 400;
+    font-style: normal;
+    color: $bgfont;
+}
+.info{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    background-color:$bgfondo;
+    border: solid;
+    section{
+        p{
+            a{
+            text-decoration: none;
+            color: $bgfont;
+            }
+        }
+    }
+}
+.redes{
+    background-color:$bgfondo;
+    margin: 10px;
+    border: solid;
+    text-align: center;
+}
+.shows{
+    background-color: $bgfondo;
+    border: solid;
+    padding: 1rem;
+    display: inline-block;
+    align-items: center;
+    margin: 5px;
+    .img{
+        width: 500px;
+        height: auto;
+    }
+}
+.carousel-inner{
+    div{
+        img{
+            width: 900px;
+            height: 800px;
+        }
+    }
+}
+.contenedor2{
+    background-color: $bgfondo;
+    text-align: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.6fr 1.6fr 1.2fr 1.2fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas:
+    ". titulo titulo ."
+    ". imgdisco imgdisco ."
+    ". temas temas ."
+    ". temas temas ."
+    ". leyenda leyenda ."
+}
+.titulo{
+    grid-area: titulo;
+}
+.imgdisco{
+    grid-area: imgdisco;
+}
+.temas{
+    grid-area: temas;
+}
+.leyenda{
+    grid-area: leyenda;
+}
+.formulario{
+    background-color: $bgfondo;
+    border: solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+}
+@media (max-width: 768px) {
+    .info{
+        width: auto;
+        max-height: none;
+    }
+    .discografia{
+        width:auto;
+        max-height: none;
+    }
+}
